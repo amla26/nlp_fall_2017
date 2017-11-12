@@ -1,9 +1,9 @@
-# Name: Amla Srivastava
-# Email ID: as5196@columbia.edu
-# Homework 1
+# Tweet Classification
+Built a classifier that will predict whether a person is a Democrat or a Republican depending on their Twitter posts.These tweets were posted during the 2014 midterm election and were self-labeled using a website called WeFollow where people post
+under either democrat or republican (this website is no longer live). Data has been divided into training (40k tweets), development (5k) and test (5k) sets.
 
 
-# How to train and test your classifier?
+## How to train and test the classifier?
 1. Install the emoji package
 2. Run hw1.py to see the results for best-performing unigram, bigram, trigram and best final models trained on train_newline.txt
 3. Run classify.py from command line using training data and testing data textfiles as arguments to check accuracy of the best performing model. This saves the best model to a model.pkl file and the vectorized test dataset to vectorized.pkl file
@@ -13,7 +13,7 @@
 5. classify.py and analyze.py have been written with modules in a way which makes it possible to access them from hw1.py as well as from command line
 
 
-# Special features and Limitations
+## Special features and Limitations
 
 The best model is a Bernoulli Naive Bayes classifier trained on data which is vectorized using a CountVectorizer with unigrams (unigram analysis gave best performance in initial models) and original word case retained. As specified in the assignment
 no stopword removal or stemming has been applied. Techniques for feature selection such as SelectKBest were applied but did not give an increase in accuracy for the best model.
