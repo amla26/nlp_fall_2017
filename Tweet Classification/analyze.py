@@ -1,5 +1,3 @@
-n[8]:
-
 import numpy as np
 import sklearn.metrics
 from sklearn.metrics import confusion_matrix
